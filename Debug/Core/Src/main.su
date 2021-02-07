@@ -1,0 +1,13 @@
+main.c:79:6:HAL_GPIO_EXTI_Callback	16	static
+main.c:95:6:HAL_TIM_PeriodElapsedCallback	16	static
+main.c:110:5:debouncer	24	static
+main.c:137:6:display_titulo	16	static
+main.c:147:6:display_intruso	16	static
+main.c:158:6:get_info	8	static
+main.c:164:6:display_info	16	static
+main.c:218:5:main	8	static
+main.c:269:6:SystemClock_Config	88	static
+main.c:314:13:MX_I2C1_Init	8	static
+main.c:348:13:MX_TIM4_Init	32	static
+main.c:393:13:MX_GPIO_Init	48	static
+main.c:436:6:Error_Handler	4	static,ignoring_inline_asm
