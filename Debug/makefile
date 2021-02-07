@@ -54,8 +54,8 @@ all: main-build
 main-build: TrabajoFinal.elf secondary-outputs
 
 # Tool invocations
-TrabajoFinal.elf: $(OBJS) $(USER_OBJS) C:\Users\jlope.DESKTOP-3003JMM\STM32CubeIDE\workspace_1.4.0\TrabajoFinal\STM32F407VGTX_FLASH.ld
-	arm-none-eabi-gcc -o "TrabajoFinal.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\jlope.DESKTOP-3003JMM\STM32CubeIDE\workspace_1.4.0\TrabajoFinal\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TrabajoFinal.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+TrabajoFinal.elf: $(OBJS) $(USER_OBJS) C:\Users\jlope.DESKTOP-3003JMM\Desktop\copia\ trabajo\ final\STM32F407VGTX_FLASH.ld
+	arm-none-eabi-gcc -o "TrabajoFinal.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\jlope.DESKTOP-3003JMM\Desktop\copia trabajo final\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TrabajoFinal.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
